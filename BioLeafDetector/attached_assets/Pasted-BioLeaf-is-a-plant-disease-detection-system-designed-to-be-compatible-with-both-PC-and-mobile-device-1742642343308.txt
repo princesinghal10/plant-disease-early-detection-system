@@ -1,0 +1,81 @@
+BioLeaf is a plant disease detection system designed to be compatible with both PC and mobile devices. The application integrates with your existing Flask API (running on port 4005) to analyze images of plants and provide detailed information about detected diseases, including treatment and prevention suggestions.
+
+Core Features
+1. Image Acquisition
+Camera Integration:
+
+Allow users to capture images directly from their device’s camera.
+
+Gallery Upload:
+
+Enable users to select and upload images from their device's gallery.
+
+2. Server Communication
+Existing Flask Integration:
+
+Utilize the Flask app running on port 4005 to handle image processing and disease detection.
+
+Image Submission:
+
+Send images via HTTP requests to the Flask server.
+
+Response Handling:
+
+Process and display server responses which include:
+
+Disease Information:
+
+Name (e.g., "Powdery Mildew")
+
+Description (e.g., "A common fungal disease that affects a wide range of plants by forming a white powdery coating.")
+
+Treatment Options:
+
+Examples: "Fungicide - Apply a fungicide spray to control the spread.", "Prune - Remove affected leaves and branches to prevent further infection.", "Organic Treatment - Use neem oil as a natural remedy."
+
+Prevention Measures:
+
+Examples: "Improve air circulation around plants.", "Avoid overhead watering to reduce moisture buildup.", "Inspect plants regularly for early signs of disease."
+
+3. Analysis History
+History Log:
+
+Maintain a history of previous analyses for user reference.
+
+Report Generation:
+
+Provide an option to download a PDF report that includes:
+
+The uploaded image.
+
+Detailed analysis (disease detection results, treatment, and prevention tips).
+
+User Interface and Experience
+1. Responsive Design
+Multi-Device Compatibility:
+
+Ensure the UI is responsive and user-friendly on both PCs and mobile devices.
+
+2. Theming and Animation
+Plant-Inspired Theme:
+
+Incorporate a design aesthetic that reflects natural elements and plants.
+
+Theme Toggle:
+
+Include a button for switching between different themes (e.g., light and dark modes).
+
+UI Animations:
+
+Add subtle animations to enhance user interaction and provide a smooth experience.
+
+Technical Integration
+Flask App Integration:
+
+The system will interact with an already existing Flask application running on port 4005 for processing the images and returning the disease analysis data.
+
+Naming and Branding
+Application Name:
+
+BioLeaf
+

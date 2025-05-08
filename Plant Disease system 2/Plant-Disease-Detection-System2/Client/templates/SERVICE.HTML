@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style1.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+    <script type="text/javascript" src="../static/index.js"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section id="servicesection" class="service">
+        
+        <div class="servicediv">
+            
+            <h1 class="serviceheading">
+                Plant Disease Prediction
+            </h1>
+            <img src="empty-image.png" style="width: 150px;" id="preview" alt="">
+            <form action="/predict" method="post" enctype="multipart/form-data">
+            <label for="imageUpload" class="label">UPLOAD IMAGE</label>
+            <input type="file" accept="image/*" class="inputing" id="imageUpload" name="imageUpload" required>
+            <br>
+            <button id="submit">PREDICT!</button>
+            </form>
+</div>
+{% if plantName and disease %}
+<div id="output">
+    <h1>Prediction Result</h1>
+    <p><strong>Plant Name:</strong> {{ plantName }}</p>
+    <p><strong>Disease Name:</strong> {{ disease }}</p>
+</div>
+{% endif %}
+    
+    </section>
+
+</body>
+</html>        
